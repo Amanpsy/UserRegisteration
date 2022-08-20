@@ -14,11 +14,11 @@ namespace TestUser
 
             if (Regex.IsMatch(input, pattern))
             {
-                Console.WriteLine("Valid");
+                Console.WriteLine("Entered pattern is Valid");
             }
             else
             {
-                Console.WriteLine("Invalid");
+                Console.WriteLine("  Entered pattern is Invalid");
             }
         }
         public void Validation()
