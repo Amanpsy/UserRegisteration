@@ -41,5 +41,11 @@ namespace TestUser
             string pattern = "^[0-9]{2}[ ][0-9]{10}";
             User_Regex(mobileNumber, pattern);
         }
+
+        public void ValidatePassword(string password)
+        {
+            string pattern = "^[0-9]{8}$";
+            User_Regex(password, pattern);
+        }
     }
 }

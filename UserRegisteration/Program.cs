@@ -28,15 +28,22 @@ namespace UserRegistration
         
 
 
-            Console.WriteLine("Enter a Mobile number with country code: ");
+            Console.WriteLine("Enter your mobile number followed by country code: ");
             string mobileNumber = Console.ReadLine();
-            userName.ValidateMobileNumber(mobileNumber);
+          userName.ValidateMobileNumber(mobileNumber);
 
+
+            Console.WriteLine("Enter password: ");
+            string password = Console.ReadLine();
+            userName.ValidatePassword(password);
             Console.ReadLine();
+            
+
+
         }
 
 
-       
+
 
     }
 }
