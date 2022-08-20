@@ -13,11 +13,11 @@ namespace TestUser
         {
             if (Regex.IsMatch(input, pattern))
             {
-                Console.WriteLine("Valid\n");
+                Console.WriteLine(" Entered pattern is Valid\n");
             }
             else
             {
-                Console.WriteLine("Invalid\n");
+                Console.WriteLine("Entered pattern is Invalid\n");
             }
         }
         public void ValidateFirstName(string firstName)
