@@ -33,7 +33,7 @@ namespace TestUser
 
         public void ValidateEmail(string emailID)
         {
-            string pattern = "^[a-z]+(.[a-z]+)?(@[a-z]+[.][a-z]+)(.[a-z]+)?";
+            string pattern = "^[a-z]+(.[a-z]{10} @[a-zA-z][.com|.in|.org]$;
             User_Regex(emailID, pattern);
         }
     }
