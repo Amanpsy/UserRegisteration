@@ -3,20 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Text.RegularExpressions;
-
-using System.Data;
+using TestUser;
 
 namespace UserRegistration
 {
     class Program
     {
-    public  static void Main(string[] args)
+        static void Main(string[] args)
         {
-            TestUser.UserNameValidation User = new TestUser.UserNameValidation();
-            User.Validation();
-            
+            Console.WriteLine("Welcom to Regular Expression Program\n");
+            UserNameValidation userName = new UserNameValidation();
+            Console.WriteLine("Enter First name: ");
+            string firstName = Console.ReadLine();
+            userName.ValidateFirstName(firstName);
 
+            Console.WriteLine("Enter Last name: ");
+            string lastName = Console.ReadLine();
+            userName.ValidateFirstName(lastName);
+            Console.ReadLine();
         }
     }
 }

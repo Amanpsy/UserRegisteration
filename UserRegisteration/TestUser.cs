@@ -7,26 +7,28 @@ using System.Threading.Tasks;
 
 namespace TestUser
 {
-   public class UserNameValidation
+    class UserNameValidation
     {
-        public void Regex_User(string input, string pattern)
+        public void User_Regex(string input, string pattern)
         {
-
             if (Regex.IsMatch(input, pattern))
             {
-                Console.WriteLine("Valid");
+                Console.WriteLine("Valid\n");
             }
             else
             {
-                Console.WriteLine("Invalid");
+                Console.WriteLine("Invalid\n");
             }
         }
-        public void Validation()
+        public void ValidateFirstName(string firstName)
         {
-            Console.WriteLine("Enter the user name");
-            string input = Console.ReadLine();
             string pattern = "^[A-Z][a-z]{3}$";
-            Regex_User(input , pattern);
+            User_Regex(firstName, pattern);
+        }
+        public void ValidateLastName(string lastName)
+        {
+            string pattern = "^[A-Z][a-z]{3}$";
+            User_Regex(lastName, pattern);
         }
     }
 }
