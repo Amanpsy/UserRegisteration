@@ -25,8 +25,16 @@ namespace UserRegistration
               Console.WriteLine("Enter a email ID: ");
             string emailID = Console.ReadLine();
             userName.ValidateEmail(emailID);
+        
+
+
+            Console.WriteLine("Enter a Mobile number with country code: ");
+            string mobileNumber = Console.ReadLine();
+            userName.ValidateMobileNumber(mobileNumber);
+
             Console.ReadLine();
         }
+
 
        
 

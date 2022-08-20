@@ -36,5 +36,10 @@ namespace TestUser
             string pattern = "^[a-z]+(.[a-z]+)?(@[a-z]+[.][a-z]+)(.[a-z]+)?";
             User_Regex(emailID, pattern);
         }
+        public void ValidateMobileNumber(string mobileNumber)
+        {
+            string pattern = "^[0-9]{2}[ ][0-9]{10}";
+            User_Regex(mobileNumber, pattern);
+        }
     }
 }
