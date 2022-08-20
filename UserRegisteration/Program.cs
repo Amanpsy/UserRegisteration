@@ -15,7 +15,7 @@ namespace UserRegistration
         {
             TestUser.UserNameValidation User = new TestUser.UserNameValidation();
             User.Validation();
-            Console.ReadLine();
+            
 
         }
     }
